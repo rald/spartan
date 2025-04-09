@@ -45,7 +45,16 @@ int main() {
           if(bnum==1) {
             fp=fopen("bible/index.gmi","a");
 
-            fprintf(fp,"#King James Version\n\n");
+            fprintf(fp,"#King James Version\n\n\n");
+            fprintf(fp,"##Old Testament\n\n");
+
+            fclose(fp);
+
+          } else if(bnum==40) {
+
+            fp=fopen("bible/index.gmi","a");
+
+            fprintf(fp,"\n\n\n##New Testament\n\n");
             fclose(fp);
           }
 
@@ -57,37 +66,36 @@ int main() {
 
           fp=fopen("bible/index.gmi","a");
 
-          fprintf(fp,"=> %s/chapters.gmi %s\n",url,bname);
+          fprintf(fp,"=> %s/index.gmi %s\n",url,bname);
 
           fclose(fp);
 
+        }
 
+
+
+        if(bnum!=pbnum || cnum!=pcnum) {
 
           if(cnum==1) {
-            sprintf(folder,"bible/%s/chapters.gmi",url);
+            sprintf(folder,"bible/%s/index.gmi",url);
             fp=fopen(folder,"a");
             fprintf(fp,"#%s\n",bname);
             fclose(fp);
           }
 
-          pbnum=bnum;
-        }
-
-
-        if(cnum!=pcnum) {
-          sprintf(folder,"bible/%s/chapters.gmi",url);
+          sprintf(folder,"bible/%s/index.gmi",url);
           fp=fopen(folder,"a");
           fprintf(fp,"=> Chapter_%zu.gmi Chapter %zu\n",cnum,cnum);
           fclose(fp);
-          pcnum=cnum;
         }
+
 
         sprintf(folder,"bible/%s/Chapter_%zu.gmi",url,cnum);
 
         fp=fopen(folder,"a");
 
         if(vnum==1) {
-          fprintf(fp,"#%s\n###Chapter %zu\n\n",bname,cnum);
+          fprintf(fp,"#%s\n##Chapter %zu\n\n",bname,cnum);
         }
 
         fprintf(fp,"%zu %s\n\n",vnum,text);
@@ -99,6 +107,9 @@ int main() {
 
         free(text);
         text=NULL;
+
+        pbnum=bnum;
+        pcnum=cnum;
 
       }
     }

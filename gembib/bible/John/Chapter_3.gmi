@@ -1,5 +1,5 @@
 #John
-###Chapter 3
+##Chapter 3
 
 1 There was a man of the Pharisees, named Nicodemus, a ruler of the Jews:
 

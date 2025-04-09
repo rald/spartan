@@ -1,5 +1,5 @@
 #Psalm
-###Chapter 14
+##Chapter 14
 
 1 The fool hath said in his heart, There is no God. They are corrupt, they have done abominable works, there is none that doeth good.
 

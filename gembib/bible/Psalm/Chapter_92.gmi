@@ -1,5 +1,5 @@
 #Psalm
-###Chapter 92
+##Chapter 92
 
 1 It is a good thing to give thanks unto the LORD, and to sing praises unto thy name, O most High:
 

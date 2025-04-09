@@ -1,5 +1,5 @@
 #Psalm
-###Chapter 15
+##Chapter 15
 
 1 LORD, who shall abide in thy tabernacle? who shall dwell in thy holy hill?
 

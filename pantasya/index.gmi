@@ -6,5 +6,4 @@
 
 => resume Resume
 
-=> bible KJV
- 
+

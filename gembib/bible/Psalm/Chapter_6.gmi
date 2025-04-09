@@ -1,5 +1,5 @@
 #Psalm
-###Chapter 6
+##Chapter 6
 
 1 O LORD, rebuke me not in thine anger, neither chasten me in thy hot displeasure.
 

@@ -1,5 +1,5 @@
 #Psalm
-###Chapter 24
+##Chapter 24
 
 1 The earth is the LORD'S, and the fulness thereof; the world, and they that dwell therein.
 
